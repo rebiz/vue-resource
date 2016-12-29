@@ -37,7 +37,7 @@ export default function (request) {
         xhr.open(request.method, request.getUrl(), true);
 
         if ('responseType' in xhr) {
-        //    xhr.responseType = 'blob';
+            xhr.responseType = 'json';
         }
 
         if (request.credentials === true) {
